@@ -1,0 +1,116 @@
+:root {
+  --color-darkGreen: #44582e;
+}
+
+ul {
+  list-style: none;
+}
+
+.Button{
+ width: 300px;
+ text-transform: uppercase;
+ color: #8b9e75;
+ font-family: 'Titillium Web', sans-serif;
+ font-weight: 900;
+ font-size: 2.5rem;
+ text-align: center;
+ padding: 30px 40px 20px 40px;
+ margin: 0 30px 0 30px;
+ background-color: var(--color-darkGreen);
+ box-shadow: 0px 15px 0px 0px rgba(56,73,36,1);
+ text-shadow: 0px 5px 0px rgba(90, 109, 67, 1);
+ clip-path: polygon(0 15%, 100% 0, 120% 120%, 0% 120%);
+ user-select: none;
+ /* Quita el azulito en el texto al clickear dos veces */
+}
+
+.Button:hover{
+ color: #d1dbc6;
+ text-shadow: 0px 5px 0px rgba(117, 137, 93, 1);
+ box-shadow: 0px 15px 0px 0px rgba(68,88,46,1);
+ cursor: pointer;
+ background-color: #5a6d43;
+}
+
+.Button:active{
+ position:relative;
+ top:5px;
+ box-shadow: 0px 10px 0px 0px rgba(68,88,46,1);
+}
+
+.Tint{
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.15;
+}
+
+.Container{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+/* ----------HEADER---------- */
+
+#main__header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-color: PowderBlue;
+  background-image: url("../Item/Menu.png");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#main__header .Logo{
+  width: 100%;
+  text-align: center;
+  padding-top: 139px;
+}
+
+#main__header .Logo img{
+  max-width: 840px;
+}
+
+#main__header #main__nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+/* ----------MAIN---------- */
+/* --------------BETWEEN-------------- */
+#main__main .Between{
+  width: 100%;
+  height: 200px;
+  background-image: url("../Item/Btw.jpg");
+  background-size: cover;
+}
+
+/* --------------WORK-------------- */
+
+#main__work{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-color: PowderBlue;
+  background-image: url("../Item/Hallway2.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#main__work img{
+  padding: 100px;
+  width: 200px;
+  height: auto;
+}
